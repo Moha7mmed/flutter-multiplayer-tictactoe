@@ -11,9 +11,13 @@ var io = require("socket.io")(server);
 
 // middle ware
 app.use(express.json());
+//const DB = "";
+//const DB = "mongodb+srv://user:user1234@cluster0.gydx0ou.mongodb.net/?retryWrites=true&w=majority";
+//const DB = "mongodb+srv://test:test1234@cluster0.gydx0ou.mongodb.net/?retryWrites=true&w=majority";
+//const DB =
+  //"mongodb+srv://Mohammed2:Moha0374531@cluster0.ahr3n8u.mongodb.net/?retryWrites=true&w=majority";
+  const DB ="mongodb+srv://test:test1234@cluster0.gydx0ou.mongodb.net/?retryWrites=true&w=majority";
 
-const DB =
-  "mongodb+srv://rivaan:test123@cluster0.rmhtu.mongodb.net/myFirstDatabase?retryWrites=true&w=majority";
 
 io.on("connection", (socket) => {
   console.log("connected!");
